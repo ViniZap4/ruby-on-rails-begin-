@@ -1,0 +1,21 @@
+<div class="botao">
+  <%= link_to("/") do %>
+    <i class="fas fa-arrow-circle-left"></i> voltar
+  <% end %>
+</div>/
+<center><h3> Criar Usuário</h3></center>
+
+
+<div class="form">
+  <%= form_tag(post_user_path, class:"tagform") do %>
+
+    <div class="form_element"><%= text_field_tag "username", nil, class:"forminput", placeholder: "digite seu nome" %></div>
+    <div class="form_element"><%= text_field_tag "useremail", nil, class:"forminput", placeholder: "digite seu e-mail" %></div>
+    <div class="form_element"><%= number_field_tag "useridade", nil, class:"forminput", placeholder: "digite sua idade" %></div>
+    <div class="form_element"><%= text_field_tag "useraltura", nil, class:"forminput", placeholder: "digite sua altura" %></div>
+    <div class="form_element"><%= text_field_tag "userpeso", nil, class:"forminput", placeholder: "digite seu peso" %></div>
+
+    <%= button_tag("enviar", class:"forminput") %>
+
+  <% end %>
+</div>

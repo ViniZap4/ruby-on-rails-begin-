@@ -1,10 +1,15 @@
-<p> alguma coisa ai </p>
+<div class="botao">
+  <%= link_to(new_user_path) do %>
+    <i class="fas fa-plus-square"></i> Criar Usuário
+  <% end %>
+</div>
 
 <table class="table table-hover">
-  <thead>
-    <tr>
+  <thead >
+    <tr style="background-color:#e4e2e3">
       <th> Nome </th>
       <th> E-mail </th>
+      <th> Ações </th>
     </tr>
   </thead>
   <tbody>
@@ -12,7 +17,25 @@
       <tr>
         <td><%= us.nome %></td>
         <td><%= us.email %></td>
+
+
+        <td>
+          <%= link_to(details_user_path(id: us.id)) do %>
+            <i class="fas fa-info-circle"></i>
+          <% end %> |
+
+          <%= link_to("/") do %>
+            <i class="fas fa-edit"></i>
+          <% end %> |
+
+          <%= link_to("/") do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </td>
+
+
       </tr>
     <% end %>
   </tbody>
+
 </table>

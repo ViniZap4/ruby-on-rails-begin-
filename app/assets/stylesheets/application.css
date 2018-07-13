@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require home
+ *= require new_user
+ *=require details
  */

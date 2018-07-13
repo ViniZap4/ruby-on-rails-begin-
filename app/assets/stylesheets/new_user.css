@@ -1,0 +1,17 @@
+.form {
+ margin-top: 20px;
+}
+.form_element{
+ margin-bottom: 10px;
+ width: 100%;
+}
+
+.tagform{
+  width: 35%;
+  margin: auto;
+}
+
+.forminput{
+  width: 100%;
+  padding-left: 20px;
+}

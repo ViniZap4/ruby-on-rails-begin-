@@ -1,0 +1,25 @@
+<div class="botao">
+    <%= link_to("/") do %>
+      <i class="fas fa-arrow-circle-left"></i> voltar
+    <% end %>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr  style="background-color:#e4e2e3">
+      <th> Nome </th>
+      <th>E-mail </th>
+      <th>Idade</th>
+      <th>altura</th>
+      <th>peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @user_details.nome %></td>
+      <td><%= @user_details.email %></td>
+      <td><%= @user_details.idade %></td>
+      <td><%= @user_details.altura %></td>
+      <td><%= @user_details.peso %></td>
+    </tr>
+  </tbody>
+</table>
